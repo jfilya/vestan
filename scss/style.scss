@@ -71,28 +71,20 @@ button {
   border: none;
 }
 .container {
-  max-width: 1440px;
+  max-width: 1280px;
   padding: 0px;
   margin: 0 auto;
-  height: 100%;
 }
 video {
   width: 100%;
-  margin-top: -145px;
-}
-#overlay {
+  height: 100%;
+  object-fit: cover;
   position: absolute;
-  width: 100%;
-  height: 99%;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url(image.png);
-  padding: 64px 80px 80px 80px;
-  z-index: 1;
-  top: 0%;
+  z-index: -1;
 }
 header {
-  position: relative;
-  height: 100%;
+  height: 769px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
 }
 #burger,
 [for="burger"] {
@@ -105,6 +97,7 @@ nav {
   padding: 24px 48px;
 }
 .header {
+  padding-top: 64px;
   display: flex;
   justify-content: space-between;
   &__navigation {
@@ -119,6 +112,7 @@ nav {
   }
 }
 .middle {
+    padding-bottom: 64px;
   &__title {
     margin-bottom: 32px;
   }
@@ -137,10 +131,7 @@ nav {
 }
 
 @media (max-width: 1280px) {
-  .container {
-    width: 1005px;
-    height: 100%;
-  }
+
   #overlay {
     padding: 30px 10px;
     height: 98%;
@@ -151,113 +142,106 @@ nav {
 }
 
 @media (max-width: 1024px) {
-  .container {
-    width: 940px;
-  }
+
 }
 
 @media (max-width: 960px) {
-  .container {
-    width: 748px;
-    padding: 16px;
-  }
-  #overlay {
-    padding: 0px;
-  }
-  nav {
-    display: none;
-    background: rgba(139, 0, 255, 0.9);
-    width: 320px;
-    height: 256px;
-    position: absolute;
-    right: 0%;
-    top: 0%;
-    padding-top: 96px;
-  }
-  .logo {
-    width: 127px;
-    z-index: 5;
-  }
-  [for="burger"] {
-    display: flex;
-    position: absolute;
-    color: #ffffff;
-    right: 16px;
-    font-size: 30px;
-    height: 40px;
-    width: 40px;
-    background-color: #8b00ff;
-    z-index: 2;
-    &::before {
-      content: "";
-      background-image: url(../img/Menu.svg);
-      background-repeat: no-repeat;
-      position: absolute;
-      width: 18px;
-      height: 18px;
-      top: 7px;
-      right: 13px;
-    }
-  }
-  #burger:checked + label + nav {
-    display: block;
-    animation: show 0.5s ease;
-  }
-  #burger:checked + [for="burger"] {
-    background-color: #2f214c;
-    &::before {
-      content: "";
-      background-image: url(../img/Menunone.svg);
-    }
-  }
-  @keyframes show {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  .header {
-    &__navigation {
-      flex-direction: column;
-      align-items: center;
-      li {
-        margin-bottom: 16px;
-      }
-    }
-  }
-  h2 {
-    font-size: 24px;
-    line-height: 32px;
-  }
+
+
 }
 
 @media (max-width: 768px) {
-  .container {
-    width: 556px;
-  }
+    .container{
+        padding:0 16px;
+    }
+    .img-logo{
+        z-index: 5;
+    }
+    nav {
+        display: none;
+        background: rgba(139, 0, 255, 0.9);
+        width: 100%;
+        height: 256px;
+        position: absolute;
+        right: 0%;
+        top: 0%;
+        padding-top: 96px;
+      }
+      .logo {
+        width: 127px;
+        z-index: 5;
+      }
+      [for="burger"] {
+        display: flex;
+        position: absolute;
+        color: #ffffff;
+        right: 16px;
+        font-size: 30px;
+        height: 40px;
+        width: 40px;
+        background-color: #8b00ff;
+        z-index: 2;
+        &::before {
+          content: "";
+          background-image: url(../img/Menu.svg);
+          background-repeat: no-repeat;
+          position: absolute;
+          width: 18px;
+          height: 18px;
+          top: 7px;
+          right: 13px;
+        }
+      }
+      #burger:checked + label + nav {
+        display: block;
+        animation: show 0.5s ease;
+      }
+      #burger:checked + [for="burger"] {
+        background-color: #2f214c;
+        &::before {
+          content: "";
+          background-image: url(../img/Menunone.svg);
+        }
+      }
+      @keyframes show {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      .header {
+        &__navigation {
+          flex-direction: column;
+          align-items: center;
+          li {
+            margin-bottom: 16px;
+          }
+        }
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 32px;
+      }
 }
 
 @media (max-width: 576px) {
-  .container {
-    width: 400px;
-  }
-  nav {
-    width: 100%;
-  }
-  header {
-    height: 336px;
-  }
 }
 
 @media (max-width: 420px) {
-  .container {
-    width: 320px;
-  }
+    header{
+        height: 500px;
+    }
 }
 
 @media (max-width: 375px) {
+    header{
+        height: 336px;
+    }
+    .header{
+        padding-top: 16px;
+    }
 }
 
 @media (max-width: 320px) {
