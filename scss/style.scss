@@ -72,7 +72,7 @@ button {
 }
 .container {
   max-width: 1300px;
-  padding:0 10px;
+  padding: 0 10px;
   margin: 0 auto;
 }
 video {
@@ -94,6 +94,8 @@ header {
 nav {
   background: #8b00ff;
   padding: 24px 48px;
+  display: flex;
+  align-items: center;
 }
 .header {
   padding-top: 64px;
@@ -101,12 +103,12 @@ nav {
   justify-content: space-between;
   &__navigation {
     display: flex;
-   align-items: center;
+    align-items: center;
     li {
       line-height: 15px;
       margin-right: 91.21px;
-      &:last-child{
-          margin-right: 0px;
+      &:last-child {
+        margin-right: 0px;
       }
       a {
         font-weight: 700;
@@ -133,45 +135,58 @@ nav {
 .section1 {
   background: #2f214c;
 }
+h3 {
+  font-family: "GothamBold";
+  font-size: 32px;
+  line-height: 36px;
+}
+h4 {
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "GothamBold";
+}
 .second {
+  display: flex;
   &__left {
     width: 720px;
     height: 536px;
     background: url(../img/Frame1.jpg);
     margin-left: -80px;
   }
-  &__right{
+  &__right {
     width: 720px;
     height: 536px;
-    padding:80px;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h3{
+        span{
+            border-bottom:8px solid #8B00FF;;
+        }
+    }
+    p {
+      line-height: 20px;
+    }
   }
 }
 @media (max-width: 1440px) {
 }
 
 @media (max-width: 1280px) {
-  nav {
-    max-width: 620px;
-  }
 }
 
 @media (max-width: 1024px) {
 }
 
 @media (max-width: 960px) {
-}
-
-@media (max-width: 768px) {
-  .container {
-    padding: 0 16px;
-  }
   .img-logo {
     z-index: 5;
   }
   nav {
     display: none;
     background: rgba(139, 0, 255, 0.9);
-    max-width: 100%;
+    width: 100%;
     height: 256px;
     position: absolute;
     right: 0%;
@@ -228,12 +243,19 @@ nav {
       align-items: center;
       li {
         margin-bottom: 16px;
+        margin-right: 0px;
       }
     }
   }
   h2 {
     font-size: 24px;
     line-height: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
   }
 }
 
