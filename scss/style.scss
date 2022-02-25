@@ -71,8 +71,8 @@ button {
   border: none;
 }
 .container {
-  max-width: 1280px;
-  padding: 0px;
+  max-width: 1300px;
+  padding:0 10px;
   margin: 0 auto;
 }
 video {
@@ -85,14 +85,13 @@ video {
 header {
   height: 769px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));
+  position: relative;
 }
 #burger,
 [for="burger"] {
   display: none;
 }
 nav {
-  width: 752.62px;
-  height: 63px;
   background: #8b00ff;
   padding: 24px 48px;
 }
@@ -102,9 +101,13 @@ nav {
   justify-content: space-between;
   &__navigation {
     display: flex;
-    justify-content: space-between;
+   align-items: center;
     li {
       line-height: 15px;
+      margin-right: 91.21px;
+      &:last-child{
+          margin-right: 0px;
+      }
       a {
         font-weight: 700;
       }
@@ -127,14 +130,26 @@ nav {
   justify-content: space-between;
   height: 100%;
 }
+.section1 {
+  background: #2f214c;
+}
+.second {
+  &__left {
+    width: 720px;
+    height: 536px;
+    background: url(../img/Frame1.jpg);
+    margin-left: -80px;
+  }
+  &__right{
+    width: 720px;
+    height: 536px;
+    padding:80px;
+  }
+}
 @media (max-width: 1440px) {
 }
 
 @media (max-width: 1280px) {
-  #overlay {
-    padding: 30px 10px;
-    height: 98%;
-  }
   nav {
     max-width: 620px;
   }

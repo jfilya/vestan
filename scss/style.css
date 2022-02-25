@@ -73,8 +73,8 @@ button {
 }
 
 .container {
-  max-width: 1280px;
-  padding: 0px;
+  max-width: 1300px;
+  padding: 0 10px;
   margin: 0 auto;
 }
 
@@ -90,6 +90,7 @@ video {
 header {
   height: 769px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));
+  position: relative;
 }
 
 #burger,
@@ -98,8 +99,6 @@ header {
 }
 
 nav {
-  width: 752.62px;
-  height: 63px;
   background: #8b00ff;
   padding: 24px 48px;
 }
@@ -111,10 +110,14 @@ nav {
 }
 .header__navigation {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 .header__navigation li {
   line-height: 15px;
+  margin-right: 91.21px;
+}
+.header__navigation li:last-child {
+  margin-right: 0px;
 }
 .header__navigation li a {
   font-weight: 700;
@@ -138,12 +141,23 @@ nav {
   height: 100%;
 }
 
-@media (max-width: 1280px) {
-  #overlay {
-    padding: 30px 10px;
-    height: 98%;
-  }
+.section1 {
+  background: #2f214c;
+}
 
+.second__left {
+  width: 720px;
+  height: 536px;
+  background: url(../img/Frame1.jpg);
+  margin-left: -80px;
+}
+.second__right {
+  width: 720px;
+  height: 536px;
+  padding: 80px;
+}
+
+@media (max-width: 1280px) {
   nav {
     max-width: 620px;
   }
