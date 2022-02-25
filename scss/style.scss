@@ -70,10 +70,14 @@ button {
   background: transparent;
   border: none;
 }
-.container {
+.container, .container2  {
   max-width: 1300px;
   padding: 0 10px;
   margin: 0 auto;
+}
+.container2 {
+    max-width: 1440px;
+    padding:0px;
 }
 video {
   width: 100%;
@@ -148,13 +152,14 @@ h4 {
 .second {
   display: flex;
   &__left {
-    width: 720px;
-    height: 536px;
-    background: url(../img/Frame1.jpg);
-    margin-left: -80px;
+    flex: none;
+    width: 50%;
+    img{
+        width: 100%;
+        height: 100%;
+    }
   }
   &__right {
-    width: 720px;
     padding: 80px;
     h3 {
       margin-bottom: 32px;
@@ -271,9 +276,16 @@ h4 {
     line-height: 32px;
   }
   .second {
+    flex-direction: column-reverse;
+    &__left {
+      width: 100%;
+      img{
+          max-width: 100%;
+      }
+    }
     &__right {
-      max-width: 606px;
-      padding: 15px;
+      max-width: 100%;
+      margin-bottom: 24px;
     }
   }
 }
@@ -283,20 +295,7 @@ h4 {
     padding: 0 16px;
   }
 
-  .second {
-    flex-direction: column-reverse;
-    &__left {
-        width: 100%;
-      margin: 0px;
-      img{
-          max-width: 100%;
-      }
-    }
-    &__right {
-        max-width: 100%;
-        margin-bottom: 24px;
-    }
-  }
+
 }
 
 @media (max-width: 576px) {
@@ -305,6 +304,13 @@ h4 {
   }
   h4 {
     font-size: 16px;
+  }
+  .second {
+    &__left {
+      p {
+        font-size: 14px;
+      }
+    }
   }
 }
 

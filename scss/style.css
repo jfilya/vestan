@@ -72,10 +72,15 @@ button {
   border: none;
 }
 
-.container {
+.container, .container2 {
   max-width: 1300px;
   padding: 0 10px;
   margin: 0 auto;
+}
+
+.container2 {
+  max-width: 1440px;
+  padding: 0px;
 }
 
 video {
@@ -163,13 +168,14 @@ h4 {
   display: flex;
 }
 .second__left {
-  width: 720px;
-  height: 536px;
-  background: url(../img/Frame1.jpg);
-  margin-left: -80px;
+  flex: none;
+  width: 50%;
+}
+.second__left img {
+  width: 100%;
+  height: 100%;
 }
 .second__right {
-  width: 720px;
   padding: 80px;
 }
 .second__right h3 {
@@ -293,22 +299,11 @@ h4 {
     line-height: 32px;
   }
 
-  .second__right {
-    max-width: 606px;
-    padding: 15px;
-  }
-}
-@media (max-width: 768px) {
-  .container {
-    padding: 0 16px;
-  }
-
   .second {
     flex-direction: column-reverse;
   }
   .second__left {
     width: 100%;
-    margin: 0px;
   }
   .second__left img {
     max-width: 100%;
@@ -318,6 +313,11 @@ h4 {
     margin-bottom: 24px;
   }
 }
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+}
 @media (max-width: 576px) {
   h3 {
     font-size: 20px;
@@ -325,6 +325,10 @@ h4 {
 
   h4 {
     font-size: 16px;
+  }
+
+  .second__left p {
+    font-size: 14px;
   }
 }
 @media (max-width: 420px) {
