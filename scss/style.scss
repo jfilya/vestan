@@ -158,7 +158,7 @@ h4 {
     width: 50%;
     img {
       width: 100%;
-      height: 100%;
+      height: 536px;
       display: flex;
     }
   }
@@ -301,7 +301,7 @@ footer {
 @media (max-width: 1280px) {
   .second {
     &__right {
-      padding: 60px;
+      padding: 50px;
     }
   }
   .company {
@@ -504,6 +504,11 @@ footer {
 .second{
     &__right{
         padding: 24px 16px;
+    }
+    &__left{
+      img{
+        height: 100%;
+      }
     }
 }
 }

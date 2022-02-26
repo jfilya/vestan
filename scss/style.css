@@ -175,7 +175,7 @@ h4 {
 }
 .second__left img {
   width: 100%;
-  height: 100%;
+  height: 536px;
   display: flex;
 }
 .second__right {
@@ -313,7 +313,7 @@ footer {
 }
 @media (max-width: 1280px) {
   .second__right {
-    padding: 60px;
+    padding: 50px;
   }
 
   .company__info__extra {
@@ -512,6 +512,9 @@ footer {
 
   .second__right {
     padding: 24px 16px;
+  }
+  .second__left img {
+    height: 100%;
   }
 }
 @media (max-width: 600px) {
