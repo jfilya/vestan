@@ -253,18 +253,14 @@ h4 {
 
 .item1,
 .item3 {
-  border-right: 1px solid white;
+  border-right: 1px solid rgba(255, 255, 255, 0.45);
   width: 100%;
 }
 
 .item1,
 .item2 {
-  border-top: 1px solid white;
+  border-top: 1px solid rgba(255, 255, 255, 0.45);
   width: 100%;
-}
-
-.second-what {
-  flex-direction: column;
 }
 
 footer {
@@ -350,6 +346,35 @@ footer {
   height: 80px;
   top: 59px;
   right: 89px;
+}
+
+.market {
+  text-align: center;
+  padding: 64px 0px;
+}
+.market__vest {
+  margin-bottom: 48px;
+}
+.market__prod {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.market__prod__products {
+  padding: 76px 80px;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: GothamBold;
+  text-align: start;
+}
+
+.product1, .product2 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+  width: 100%;
+}
+
+.product1, .product3 {
+  border-right: 1px solid rgba(255, 255, 255, 0.45);
+  height: 100%;
 }
 
 @media (max-width: 1440px) {
@@ -581,7 +606,7 @@ footer {
 
   .item4,
 .item5 {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.45);
   }
 
   .item4,
@@ -591,7 +616,7 @@ footer {
   .item4::before,
 .item6::before {
     content: "";
-    border-right: 1px solid white;
+    border-right: 1px solid rgba(255, 255, 255, 0.45);
     position: absolute;
     height: 90%;
     right: 0%;
