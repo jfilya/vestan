@@ -233,18 +233,30 @@ h4 {
         font-size: 20px;
         line-height: 24px;
       }
+      &:first-child {
+        border-right: 1px solid rgba(255, 255, 255, 0.45);
+        border-top: 1px solid rgba(255, 255, 255, 0.45);
+        width: 100%;
+      }
+      &:nth-child(2) {
+        border-right: 1px solid rgba(255, 255, 255, 0.45);
+        border-top: 1px solid rgba(255, 255, 255, 0.45);
+        width: 100%;
+      }
+      &:nth-child(3) {
+        border-top: 1px solid rgba(255, 255, 255, 0.45);
+        width: 100%;
+      }
+      &:nth-child(4) {
+        border-right: 1px solid rgba(255, 255, 255, 0.45);
+        width: 100%;
+      }
+      &:nth-child(5) {
+        border-right: 1px solid rgba(255, 255, 255, 0.45);
+        width: 100%;
+      }
     }
   }
-}
-.item1,
-.item3 {
-  border-right: 1px solid rgba(255, 255, 255, 0.45);
-  width: 100%;
-}
-.item1,
-.item2 {
-  border-top: 1px solid rgba(255, 255, 255, 0.45);
-  width: 100%;
 }
 footer {
   background: #3d2f59;
@@ -344,18 +356,30 @@ footer {
       line-height: 24px;
       font-family: GothamBold;
       text-align: start;
+      &:first-child {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+        border-right: 1px solid rgba(255, 255, 255, 0.45);
+        width: 100%;
+      }
+      &:nth-child(2) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+        border-right: 1px solid rgba(255, 255, 255, 0.45);
+        width: 100%;
+      }
+      &:nth-child(3) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+        width: 100%;
+      }
+      &:nth-child(4) {
+        border-right: 1px solid rgba(255, 255, 255, 0.45);
+        width: 100%;
+      }
+      &:nth-child(5) {
+        border-right: 1px solid rgba(255, 255, 255, 0.45);
+        width: 100%;
+      }
     }
   }
-}
-.product1,
-.product2 {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.45);
-  width: 100%;
-}
-.product1,
-.product3 {
-  border-right: 1px solid rgba(255, 255, 255, 0.45);
-  height: 100%;
 }
 
 .middlecont {
@@ -806,46 +830,76 @@ footer {
       }
     }
   }
-  .item1,
-  .item2,
-  .item3 {
-    border: none;
-  }
-  .item4,
-  .item5 {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.45);
-  }
-  .item4,
-  .item6 {
-    position: relative;
-    &::before {
-      content: "";
-      border-right: 1px solid rgba(255, 255, 255, 0.45);
-      position: absolute;
-      height: 90%;
-      right: 0%;
-      top: 5%;
+  .company {
+    &__info {
+      &__extra {
+        border: none;
+        &:first-child {
+          border: none;
+        }
+        &:nth-child(2) {
+          border: none;
+        }
+        &:nth-child(3) {
+          border: none;
+          border-top: 1px solid rgba(255, 255, 255, 0.45);
+          width: 100%;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+        }
+        &:nth-child(4) {
+          border: none;
+          border-top: 1px solid rgba(255, 255, 255, 0.45);
+          width: 100%;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+        }
+        &:nth-child(5) {
+          border: none;
+        }
+        &:nth-child(odd) {
+          position: relative;
+          &::before {
+            content: "";
+            border-right: 1px solid rgba(255, 255, 255, 0.45);
+            position: absolute;
+            height: 80%;
+            right: 0%;
+            top: 10%;
+          }
+        }
+      }
     }
   }
-  .product1,
-  .product3 {
-    border-right: none;
-  }
-  .product5 {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.45);
-    width: 100%;
-  }
-  .product6 {
-    position: relative;
-    &::before {
-      content: "";
-      position: absolute;
-      height: 60%;
-      border-right: 1px solid rgba(255, 255, 255, 0.45);
-      right: 0%;
-      top: 20%;
+  .market {
+    &__prod {
+      &__products {
+        &:first-child {
+          border-right: none;
+        }
+        &:nth-child(2) {
+          border-right: none;
+        }
+        &:nth-child(4) {
+          border-right: none;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+        }
+        &:nth-child(5) {
+          border-right: none;
+        }
+        &:nth-child(odd) {
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            height: 60%;
+            border-right: 1px solid rgba(255, 255, 255, 0.45);
+            right: 0%;
+            top: 20%;
+          }
+        }
+      }
     }
   }
+
   .copyright {
     font-size: 14px;
     line-height: 18px;
