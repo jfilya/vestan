@@ -1,6 +1,6 @@
 const btnOpen = document.getElementById('btn-open');
 const btnOpen2 = document.getElementById('btn-open2');
-const btnOpen3 = document.getElementById('btn-open4');
+const btnOpen3 = document.getElementById('btn-open3');
 const btnOpen4 = document.getElementById('btn-open4');
 const btnOpen5 = document.getElementById('btn-open5');
 const btnOpen6 = document.getElementById('btn-open6');

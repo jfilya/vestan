@@ -352,7 +352,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     &__products {
-      padding: 76px 80px;
+      padding: 64px 80px;
       font-size: 20px;
       line-height: 24px;
       font-family: GothamBold;
@@ -449,13 +449,11 @@ footer {
   background: #3d2f59;
   padding-bottom: 122px;
 }
-.bigwrapper{
-  height: 100vh;
-}
 .contact {
   background: url(../img/bgcontact.jpg);
   background-size: cover;
   background-position: center center;
+  height: calc(100vh - 120px);
 }
 .headercontact {
   margin-bottom: 190px;
@@ -567,15 +565,14 @@ footer {
   justify-content: end;
   padding: 24px 24px;
 }
+.secondwork{
+  align-items: start;
+}
 @media (max-width: 1440px) {
 }
 
 @media (max-width: 1280px) {
-  .second {
-    &__right {
-      padding: 50px;
-    }
-  }
+
   .company {
     &__info {
       &__extra {
