@@ -509,21 +509,21 @@ footer {
   border-radius: 100px;
 }
 .job__variant__var:first-child {
-  border-right: 1px solid #E2E0E6;
-  border-bottom: 1px solid #E2E0E6;
+  border-right: 1px solid #e2e0e6;
+  border-bottom: 1px solid #e2e0e6;
 }
 .job__variant__var:nth-child(2) {
-  border-right: 1px solid #E2E0E6;
-  border-bottom: 1px solid #E2E0E6;
+  border-right: 1px solid #e2e0e6;
+  border-bottom: 1px solid #e2e0e6;
 }
 .job__variant__var:nth-child(3) {
-  border-bottom: 1px solid #E2E0E6;
+  border-bottom: 1px solid #e2e0e6;
 }
 .job__variant__var:nth-child(4) {
-  border-right: 1px solid #E2E0E6;
+  border-right: 1px solid #e2e0e6;
 }
 .job__variant__var:nth-child(5) {
-  border-right: 1px solid #E2E0E6;
+  border-right: 1px solid #e2e0e6;
 }
 
 @media (max-width: 1280px) {
@@ -708,6 +708,10 @@ footer {
   .secondwork {
     flex-direction: column;
   }
+
+  .greatest {
+    height: 100%;
+  }
 }
 @media (max-width: 860px) {
   .footer {
@@ -722,15 +726,16 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
   .job__variant__var:nth-child(3) {
-    border-right: 1px solid #E2E0E6;
+    border-right: 1px solid #e2e0e6;
   }
   .job__variant__var:nth-child(4) {
-    border-bottom: 1px solid #E2E0E6;
+    border-bottom: 1px solid #e2e0e6;
   }
 }
 @media (max-width: 768px) {
   .container {
-    padding: 0 16px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .company__info__extra p {
@@ -738,7 +743,8 @@ footer {
   }
 
   .container2 {
-    padding: 0px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .second__right {
@@ -881,8 +887,38 @@ footer {
     height: 40px;
   }
 
+  .job {
+    padding: 24px 16px;
+  }
+  .job__opport {
+    margin-bottom: 0px;
+  }
   .job__variant {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .job__variant__var {
+    text-align: center;
+    padding: 24px 0;
+    border-bottom: 1px solid #e2e0e6;
+  }
+  .job__variant__var:nth-child(odd) {
+    border-right: none;
+  }
+  .job__variant__var:nth-child(even) {
+    border-right: none;
+  }
+  .job__variant__var-head {
+    margin-bottom: 16px;
+    line-height: 24px;
+  }
+  .job__variant__var-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .job__variant__var-text2 {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 16px;
   }
 }
 @media (max-width: 420px) {
@@ -1001,5 +1037,39 @@ footer {
   .map img {
     width: 248px;
     height: 152px;
+  }
+
+  .works {
+    height: 520px;
+  }
+
+  .work__we {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .work__if {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .greatest__title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+  .greatest__info {
+    margin-bottom: 12px;
+  }
+  .greatest p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .greatest__list li {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 12px;
+  }
+  .greatest__list li:last-child {
+    margin-bottom: 0px;
   }
 }/*# sourceMappingURL=style.css.map */

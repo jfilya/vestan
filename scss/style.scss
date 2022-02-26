@@ -474,21 +474,21 @@ footer {
         border-radius: 100px;
       }
       &:first-child {
-        border-right: 1px solid #E2E0E6;
-        border-bottom: 1px solid #E2E0E6;
+        border-right: 1px solid #e2e0e6;
+        border-bottom: 1px solid #e2e0e6;
       }
-      &:nth-child(2){
-        border-right: 1px solid #E2E0E6;
-        border-bottom: 1px solid #E2E0E6;
+      &:nth-child(2) {
+        border-right: 1px solid #e2e0e6;
+        border-bottom: 1px solid #e2e0e6;
       }
-      &:nth-child(3){
-        border-bottom: 1px solid #E2E0E6;
+      &:nth-child(3) {
+        border-bottom: 1px solid #e2e0e6;
       }
-      &:nth-child(4){
-        border-right: 1px solid #E2E0E6;
+      &:nth-child(4) {
+        border-right: 1px solid #e2e0e6;
       }
-      &:nth-child(5){
-        border-right: 1px solid #E2E0E6;
+      &:nth-child(5) {
+        border-right: 1px solid #e2e0e6;
       }
     }
   }
@@ -536,10 +536,10 @@ footer {
       }
     }
   }
-  .job{
-    &__variant{
-      &__var{
-        padding:40px;
+  .job {
+    &__variant {
+      &__var {
+        padding: 40px;
       }
     }
   }
@@ -681,6 +681,9 @@ footer {
   .secondwork {
     flex-direction: column;
   }
+  .greatest {
+    height: 100%;
+  }
 }
 @media (max-width: 860px) {
   .footer {
@@ -690,23 +693,24 @@ footer {
       margin-bottom: 24px;
     }
   }
-  .job{
-    &__variant{
+  .job {
+    &__variant {
       grid-template-columns: repeat(2, 1fr);
-      &__var{
-        &:nth-child(3){
-            border-right: 1px solid #E2E0E6;
+      &__var {
+        &:nth-child(3) {
+          border-right: 1px solid #e2e0e6;
         }
-        &:nth-child(4){
-          border-bottom: 1px solid #E2E0E6;
-      }
+        &:nth-child(4) {
+          border-bottom: 1px solid #e2e0e6;
+        }
       }
     }
   }
 }
 @media (max-width: 768px) {
   .container {
-    padding: 0 16px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .company {
     &__info {
@@ -718,7 +722,8 @@ footer {
     }
   }
   .container2 {
-    padding: 0px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .second {
     &__right {
@@ -861,9 +866,37 @@ footer {
       height: 40px;
     }
   }
-  .job{
-    &__variant{
+  .job {
+    padding: 24px 16px;
+    &__opport {
+      margin-bottom: 0px;
+    }
+    &__variant {
       grid-template-columns: repeat(1, 1fr);
+      &__var {
+        text-align: center;
+        padding: 24px 0;
+        border-bottom: 1px solid #e2e0e6;
+        &:nth-child(odd) {
+          border-right: none;
+        }
+        &:nth-child(even) {
+          border-right: none;
+        }
+        &-head {
+          margin-bottom: 16px;
+          line-height: 24px;
+        }
+        &-text {
+          font-size: 14px;
+          line-height: 18px;
+        }
+        &-text2 {
+          font-size: 14px;
+          line-height: 18px;
+          margin-bottom: 16px;
+        }
+      }
     }
   }
 }
@@ -986,6 +1019,43 @@ footer {
     img {
       width: 248px;
       height: 152px;
+    }
+  }
+  .works {
+    height: 520px;
+  }
+  .work {
+    &__we {
+      font-size: 14px;
+      line-height: 18px;
+    }
+    &__if {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+  .greatest {
+    &__title {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 16px;
+    }
+    &__info {
+      margin-bottom: 12px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 18px;
+    }
+    &__list {
+      li {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 12px;
+        &:last-child {
+          margin-bottom: 0px;
+        }
+      }
     }
   }
 }
