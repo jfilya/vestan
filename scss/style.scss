@@ -70,14 +70,15 @@ button {
   background: transparent;
   border: none;
 }
-.container, .container2  {
+.container,
+.container2 {
   max-width: 1300px;
   padding: 0 10px;
   margin: 0 auto;
 }
 .container2 {
-    max-width: 1440px;
-    padding:0px;
+  max-width: 1440px;
+  padding: 0px;
 }
 video {
   width: 100%;
@@ -154,9 +155,9 @@ h4 {
   &__left {
     flex: none;
     width: 50%;
-    img{
-        width: 100%;
-        height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
     }
   }
   &__right {
@@ -183,8 +184,86 @@ h4 {
 }
 .section2 {
   background: #8b00ff;
+  padding: 64px 0;
+}
+.company {
+  h3 {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  &__line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.45);
+  }
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 16px;
+    align-items: center;
+    &__line {
+      width: 1px;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.45);
+    }
+    &__extra {
+      width: 405px;
+      padding: 64px;
+      p {
+        font-family: "GothamBold";
+        font-size: 64px;
+        line-height: 64px;
+        margin-bottom: 8px;
+      }
+      span {
+        font-family: "GothamBold";
+        display: flex;
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+footer {
+  background: #3d2f59;
+  padding: 40px 0;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__info {
+    display: flex;
+    align-items: center;
+    li {
+      &:first-child {
+        margin-right: 24px;
+      }
+    }
+  }
+  &__navigation {
+    display: flex;
+    align-items: center;
+    li {
+      margin-right: 64px;
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+.logo-foot {
+  max-width: 101px;
 }
 @media (max-width: 1440px) {
+  .company {
+    &__info {
+      &__extra {
+        width: 400px;
+      }
+    }
+  }
 }
 
 @media (max-width: 1280px) {
@@ -193,19 +272,52 @@ h4 {
       padding: 60px;
     }
   }
+  .company {
+    &__info {
+      &__extra {
+        width: 350px;
+        padding: 40px 20px;
+        p {
+          font-size: 50px;
+          line-height: 50px;
+        }
+      }
+    }
+  }
 }
-
+@media (max-width: 1150px) {
+  .company {
+    &__info {
+      &__extra {
+        width: 290px;
+      }
+    }
+  }
+}
 @media (max-width: 1024px) {
   .second {
     &__right {
       padding: 40px;
     }
   }
+  .company {
+    &__info {
+      &__extra {
+        p {
+          font-size: 40px;
+          line-height: 40px;
+        }
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 960px) {
   .img-logo {
-    z-index: 5;
+    z-index: 1;
   }
   nav {
     display: none;
@@ -219,7 +331,6 @@ h4 {
   }
   .logo {
     width: 127px;
-    z-index: 5;
   }
   [for="burger"] {
     display: flex;
@@ -279,25 +390,108 @@ h4 {
     flex-direction: column-reverse;
     &__left {
       width: 100%;
-      img{
-          max-width: 100%;
+      img {
+        max-width: 100%;
       }
     }
     &__right {
+      padding: 24px 0;
       max-width: 100%;
-      margin-bottom: 24px;
+      h2 {
+        margin-bottom: 16px;
+      }
+      &__our {
+        margin-bottom: 16px;
+      }
+      h4 {
+        margin-bottom: 16px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+  .company {
+    &__line {
+      display: none;
+    }
+    &__info {
+      align-items: start;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 32px;
+      &__line {
+        display: none;
+      }
+      &__extra {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        width: 100%;
+        p {
+          font-size: 30px;
+          line-height: 30px;
+        }
+        span {
+          text-align: center;
+        }
+      }
     }
   }
 }
-
+@media (max-width: 860px) {
+  .footer {
+    flex-direction: column;
+    align-self: start;
+    &__info {
+      margin-bottom: 32px;
+    }
+  }
+}
 @media (max-width: 768px) {
   .container {
     padding: 0 16px;
   }
-
-
+  .company {
+    &__line {
+      display: none;
+    }
+    &__info {
+      &__extra {
+        p {
+          font-size: 24px;
+        }
+      }
+    }
+  }
 }
-
+@media (max-width: 600px) {
+  footer {
+    padding-bottom: 90px;
+    position: relative;
+  }
+  .footer {
+    &__info {
+      flex-direction: column;
+      li {
+        &:first-child {
+          margin-right: 0px;
+        }
+      }
+    }
+    &__navigation {
+      flex-direction: column;
+      li {
+        margin-right: 0px;
+        margin-bottom: 16px;
+      }
+    }
+  }
+  .copirights {
+    position: absolute;
+    bottom: 40px;
+  }
+}
 @media (max-width: 576px) {
   h3 {
     font-size: 20px;
@@ -311,6 +505,9 @@ h4 {
         font-size: 14px;
       }
     }
+  }
+  .section2 {
+    padding: 24px 0;
   }
 }
 
