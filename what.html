@@ -4,13 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
     <link rel="stylesheet" href="scss/style.css" />
     <title>Vestan</title>
   </head>
   <body>
     <header>
-      <video
+      <video class="video-head"
         src="video/1067906534-4k.webm"
         loop="loop"
         autoplay=""
@@ -26,7 +25,7 @@
           <nav>
             <ul class="header__navigation">
               <li><a href="./index.html">About Us</a></li>
-              <li><a href="./what.html">What We Do</a></li>
+              <li><a class="activehtml" href="./what.html">What We Do</a></li>
               <li><a href=".work.html">Work With Us</a></li>
               <li><a href=".contacts.html">Contacts</a></li>
             </ul>
@@ -36,7 +35,7 @@
           <div class="middle__title">
             <h2>What We Do</h2>
           </div>
-          <p>
+          <p class="middle__mission">
             We research and implement cutting-edge VR and AR solutions. In our
             laboratories, we create prototypes of devices that allow us to
             remain at
@@ -44,10 +43,10 @@
         </div>
       </div>
     </header>
-    <section class="section3">
+    <section class="wrap">
       <div class="container container2 second  second-what">
         <div class="second__right whatright">
-          <h3>IT</h3>
+          <h3 class="whatright__vest">IT</h3>
           <p class="second__right__largest whatright__text">
             We use solutions for streaming high-definition video to the user's
             VR headset with minimal latency for maximal realism.
@@ -65,8 +64,9 @@
             manipulation using either controllers or hand gestures.
           </p>
         </div>
-        <div class="second__left">
-          <img src="img/Frame2.jpg" alt="img" />
+        <div class="second__left live">
+          <img  class="second__left__image" src="img/Frame2.jpg" alt="img" />
+          <img src="img/Livestream.svg" alt="Livestream" class="live__livestream">
         </div>
       </div>
     </section>
@@ -86,10 +86,10 @@
         </p>
       </div>
     </section>
-    <section class="section3">
+    <section class="wrap">
         <div class="container container2 second">
-          <div class="second__left">
-            <img src="img/Frame3.jpg" alt="img" />
+          <div class="second__left camera">
+            <img  class="second__left__image" src="img/Frame3.jpg" alt="img" />
           </div>
           <div class="second__right">
             <h3>Cameras</h3>
@@ -110,7 +110,7 @@
               ><img class="logo-foot" src="img/Logo.svg" alt="Logo"
             /></a>
           </li>
-          <li class="copirights">@ 2021 Vestan</li>
+          <li class="copyright">@ 2021 Vestan</li>
         </ul>
         <ul class="footer__navigation">
           <li><a href="./index.html">About Us</a></li>

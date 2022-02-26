@@ -4,13 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
     <link rel="stylesheet" href="scss/style.css" />
     <title>Vestan</title>
   </head>
   <body>
     <header>
-      <video
+      <video class="video-head"
         src="video/1012583648-4k.webm"
         loop="loop"
         autoplay=""
@@ -25,7 +24,7 @@
           <label for="burger"></label>
           <nav>
             <ul class="header__navigation">
-              <li><a href="./index.html">About Us</a></li>
+              <li><a class="activehtml" href="./index.html">About Us</a></li>
               <li><a href="./what.html">What We Do</a></li>
               <li><a href=".work.html">Work With Us</a></li>
               <li><a href=".contacts.html">Contacts</a></li>
@@ -36,7 +35,7 @@
           <div class="middle__title">
             <h2>About Us</h2>
           </div>
-          <p>
+          <p class="middle__mission">
             Our mission: We know that people long to be closer to their idols,
             and we use our product to help them achieve their dream in the
             virtual world. Vestan is the only company on the market that
@@ -45,13 +44,13 @@
         </div>
       </div>
     </header>
-    <section class="section1">
+    <section class="wrapper">
         <div class="container container2 second">
             <div class="second__left">
-                <img src="img/Frame1.jpg" alt="img">
+                <img class="second__left__image second__left__image1" src="img/Frame1.jpg" alt="img">
             </div>
             <div class="second__right">
-                <h3>Vestan is a <span>global leader</span> </h3>
+                <h3 class="second__right__vest">Vestan is a <span>global leader</span> </h3>
                 <p class="second__right__our">Our superpower consists of a fantastic, innovative IT product, one-of-a-kind cameras, the world's best content, and a team of true professionals!</p>
                 <h4>in the development of VR streaming technology</h4>
                 <p class="second__right__largest">The largest number of VR streaming hours in the world! VR breaks down barriers. Take in interesting events of all kinds and share exciting experiences with friends and family. </p>
@@ -59,28 +58,27 @@
             </div>
         </div>
     </section>
-    <section class="section2">
+    <section class="information">
         <div class="container company">
-            <h3>The Company in Numbers</h3>
-
+            <h3 class="company__numbers">The Company in Numbers</h3>
             <div class="company__info">
-                <div class="company__info__extra">
+                <div class="company__info__extra item1 item4">
                     <p>2018</p>
                     <span>Company founded in 2018</span>
                 </div>
-                <div class="company__info__extra">
+                <div class="company__info__extra item1 item5">
                     <p>500 k+</p>
                     <span>Hours of VR streaming</span>
                 </div>
-                <div class="company__info__extra">
+                <div class="company__info__extra item2 item4">
                     <p>500 m+</p>
                     <span>Users know about our product</span>
                 </div>
-                <div class="company__info__extra">
+                <div class="company__info__extra item3 item5">
                     <p>5,000+</p>
                     <span>Content creators</span>
                 </div>
-                <div class="company__info__extra">
+                <div class="company__info__extra item3 item6">
                     <p>1,000+</p>
                     <span>PWN-brand VR cameras</span>
                 </div>
@@ -95,7 +93,7 @@
         <div class="container footer">
             <ul class="footer__info">
                 <li><a href="./index.html"><img class="logo-foot"src="img/Logo.svg" alt="Logo"></a></li>
-                <li class="copirights">@ 2021 Vestan</li>
+                <li class="copyright">@ 2021 Vestan</li>
             </ul>
             <ul class="footer__navigation">
                 <li><a href="./index.html">About Us</a></li>
