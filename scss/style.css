@@ -384,9 +384,36 @@ footer {
   height: 100%;
 }
 
+.contact {
+  background: url(../img/BG-contact.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 900px;
+}
+
+.middlecont {
+  padding-bottom: 230px;
+}
+.middlecont__title {
+  margin-bottom: 32px;
+}
+.middlecont__vest {
+  margin-bottom: 24px;
+}
+.middlecont__address {
+  margin-bottom: 5px;
+}
+.middlecont__mail {
+  font-family: GothamBold;
+}
+
 @media (max-width: 1440px) {
   header {
     height: 668px;
+  }
+
+  .contact {
+    height: 748px;
   }
 }
 @media (max-width: 1280px) {
@@ -727,6 +754,10 @@ footer {
     margin-bottom: 28px;
   }
 
+  .contact {
+    height: 460px;
+  }
+
   .middle {
     padding-bottom: 24px;
   }
@@ -801,5 +832,33 @@ footer {
   }
   .whatright__text1 {
     margin-bottom: 0px;
+  }
+
+  .contact {
+    background: url(../img/bg-contacts-min.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .headercontact {
+    margin-bottom: 20px;
+  }
+
+  .middlecont {
+    padding-bottom: 236px;
+  }
+  .middlecont__title {
+    margin-bottom: 20px;
+  }
+  .middlecont__vest {
+    margin-bottom: 5px;
+  }
+  .middlecont__address {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .middlecont__mail {
+    font-size: 14px;
+    line-height: 18px;
   }
 }/*# sourceMappingURL=style.css.map */

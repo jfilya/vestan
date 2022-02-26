@@ -355,9 +355,33 @@ footer {
   border-right: 1px solid rgba(255, 255, 255, 0.45);
   height: 100%;
 }
+.contact {
+  background: url(../img/BG-contact.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 900px;
+}
+.middlecont {
+  padding-bottom: 230px;
+  &__title {
+    margin-bottom: 32px;
+  }
+  &__vest {
+    margin-bottom: 24px;
+  }
+  &__address {
+    margin-bottom: 5px;
+  }
+  &__mail {
+    font-family: GothamBold;
+  }
+}
 @media (max-width: 1440px) {
   header {
     height: 668px;
+  }
+  .contact {
+    height: 748px;
   }
 }
 
@@ -469,8 +493,8 @@ footer {
       }
     }
   }
-  .activehtml{
-    &::before{
+  .activehtml {
+    &::before {
       display: none;
     }
   }
@@ -705,6 +729,9 @@ footer {
     padding-top: 16px;
     margin-bottom: 28px;
   }
+  .contact {
+    height: 460px;
+  }
   .middle {
     padding-bottom: 24px;
     &__title {
@@ -787,9 +814,35 @@ footer {
       margin-bottom: 0px;
     }
   }
+  .contact {
+    background: url(../img/bg-contacts-min.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
+  .headercontact {
+    margin-bottom: 20px;
+  }
+  .middlecont {
+    padding-bottom: 236px;
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__vest {
+      margin-bottom: 5px;
+    }
+    &__address {
+      font-size: 14px;
+      line-height: 18px;
+    }
+    &__mail {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
 }
 
 @media (max-width: 375px) {
+
 }
 
 @media (max-width: 320px) {
