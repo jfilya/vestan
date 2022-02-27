@@ -600,11 +600,14 @@ footer {
     }
   }
   .greatest {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 }
-@media (max-width: 1150px) {
+@media (max-width: 1068px) {
+  .greatest {
+    height: 65vh;
+}
 }
 @media (max-width: 1024px) {
   .second {

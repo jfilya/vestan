@@ -776,8 +776,14 @@ footer {
     line-height: 50px;
   }
   .greatest {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 1068px) {
+  .greatest {
+    height: 65vh;
   }
 }
 
