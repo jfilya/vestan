@@ -271,8 +271,13 @@ footer {
     display: flex;
     align-items: center;
     li {
+      display: flex;
+      align-items: center;
+      a{
+        display: flex;
+        align-items: center;
+      }
       &:first-child {
-        height: 31px;
         margin-right: 24px;
       }
     }
@@ -448,6 +453,9 @@ footer {
     }
   }
 }
+.greatest{
+  padding:80px;
+}
 .greatesting {
   background: #3d2f59;
   padding-bottom: 122px;
@@ -456,7 +464,7 @@ footer {
   background: url(../img/bgcontact.jpg);
   background-size: cover;
   background-position: center center;
-  height: calc(100vh - 111px);
+  height: calc(100vh - 112px);
 }
 .headercontact {
   margin-bottom: 190px;
@@ -489,7 +497,7 @@ footer {
         margin-bottom: 15px;
         line-height: 20px;
       }
-      &-text2 {
+      &-textlast {
         margin-bottom: 32px;
         line-height: 20px;
       }
@@ -580,7 +588,6 @@ footer {
       padding:50px;
     }
   }
-
   .company {
     &__info {
       &__extra {
@@ -592,6 +599,10 @@ footer {
       }
     }
   }
+  .greatest {
+    padding-left: 15px;
+    padding-right: 15px;
+}
 }
 @media (max-width: 1150px) {
 }
@@ -762,14 +773,16 @@ footer {
   }
   .greatest {
     height: 100%;
-  }
+    max-width: 100%;
+    padding: 20px;
+}
 }
 @media (max-width: 860px) {
   .footer {
     flex-direction: column;
     align-self: start;
     &__info {
-      margin-bottom: 24px;
+      margin-bottom: 32px;
     }
   }
   .job {
@@ -823,7 +836,7 @@ footer {
 }
 @media (max-width: 600px) {
   footer {
-    padding-bottom: 80px;
+    padding-bottom: 90px;
     position: relative;
   }
   .footer {
@@ -839,7 +852,11 @@ footer {
       flex-direction: column;
       li {
         margin-right: 0px;
-        margin-bottom: 10px;
+        line-height: 20px;
+        margin-bottom: 16px;
+        &:last-child{
+          margin-bottom: 0px;
+        }
       }
     }
   }
@@ -877,6 +894,7 @@ footer {
   }
   .market {
     padding-top: 24px;
+    padding-bottom: 0px;
     &__vest {
       font-size: 20px;
       line-height: 24px;
@@ -887,6 +905,8 @@ footer {
       justify-items: center;
       &__products {
         text-align: center;
+        display: flex;
+        align-items: flex-start;
         padding: 24px 8px;
       }
     }
@@ -1006,7 +1026,7 @@ footer {
           font-size: 14px;
           line-height: 18px;
         }
-        &-text2 {
+        &-textlast {
           font-size: 14px;
           line-height: 18px;
           margin-bottom: 16px;
@@ -1182,8 +1202,10 @@ footer {
       line-height: 20px;
       margin-bottom: 12px;
     }
-    &__text2{
-      margin-bottom: 24px;
+    &__textlast{
+      text-align: start;
+      line-height: 20px;
+      margin-bottom: 26px;
     }
   }
   .modal-btn{

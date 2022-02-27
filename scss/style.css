@@ -367,8 +367,25 @@ footer {
           align-items: center;
 }
 
+.footer__info li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__info li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .footer__info li:first-child {
-  height: 31px;
   margin-right: 24px;
 }
 
@@ -589,6 +606,10 @@ footer {
   margin-bottom: 0px;
 }
 
+.greatest {
+  padding: 80px;
+}
+
 .greatesting {
   background: #3d2f59;
   padding-bottom: 122px;
@@ -598,7 +619,7 @@ footer {
   background: url(../img/bgcontact.jpg);
   background-size: cover;
   background-position: center center;
-  height: calc(100vh - 111px);
+  height: calc(100vh - 112px);
 }
 
 .headercontact {
@@ -645,7 +666,7 @@ footer {
   line-height: 20px;
 }
 
-.job__variant__var-text2 {
+.job__variant__var-textlast {
   margin-bottom: 32px;
   line-height: 20px;
 }
@@ -753,6 +774,10 @@ footer {
   .company__info__extra p {
     font-size: 50px;
     line-height: 50px;
+  }
+  .greatest {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -925,6 +950,8 @@ footer {
   }
   .greatest {
     height: 100%;
+    max-width: 100%;
+    padding: 20px;
   }
 }
 
@@ -939,7 +966,7 @@ footer {
         align-self: start;
   }
   .footer__info {
-    margin-bottom: 24px;
+    margin-bottom: 32px;
   }
   .job__variant {
     -ms-grid-columns: (1fr)[2];
@@ -981,7 +1008,7 @@ footer {
 
 @media (max-width: 600px) {
   footer {
-    padding-bottom: 80px;
+    padding-bottom: 90px;
     position: relative;
   }
   .footer__info {
@@ -1001,7 +1028,11 @@ footer {
   }
   .footer__navigation li {
     margin-right: 0px;
-    margin-bottom: 10px;
+    line-height: 20px;
+    margin-bottom: 16px;
+  }
+  .footer__navigation li:last-child {
+    margin-bottom: 0px;
   }
   .copyright {
     position: absolute;
@@ -1028,6 +1059,7 @@ footer {
   }
   .market {
     padding-top: 24px;
+    padding-bottom: 0px;
   }
   .market__vest {
     font-size: 20px;
@@ -1041,6 +1073,12 @@ footer {
   }
   .market__prod__products {
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     padding: 24px 8px;
   }
   .company__info__extra {
@@ -1151,7 +1189,7 @@ footer {
     font-size: 14px;
     line-height: 18px;
   }
-  .job__variant__var-text2 {
+  .job__variant__var-textlast {
     font-size: 14px;
     line-height: 18px;
     margin-bottom: 16px;
@@ -1314,8 +1352,10 @@ footer {
     line-height: 20px;
     margin-bottom: 12px;
   }
-  .content__text2 {
-    margin-bottom: 24px;
+  .content__textlast {
+    text-align: start;
+    line-height: 20px;
+    margin-bottom: 26px;
   }
   .modal-btn {
     padding-bottom: 0px;
