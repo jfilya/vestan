@@ -1050,6 +1050,13 @@ footer {
     line-height: 18px;
     margin-bottom: 24px;
   }
+
+  #modal-window {
+    bottom: 0%;
+    transform: translate(-50%, 0%);
+    height: 552px;
+    border-radius: 24px 24px 0px 0px;
+  }
 }
 @media screen and (max-width: 420px) {
   header {
@@ -1196,13 +1203,6 @@ footer {
   }
   .greatest__list li:last-child {
     margin-bottom: 0px;
-  }
-
-  #modal-window {
-    bottom: 0%;
-    transform: translate(-50%, 0%);
-    height: 552px;
-    border-radius: 24px 24px 0px 0px;
   }
 
   .content {
