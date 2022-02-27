@@ -1173,6 +1173,7 @@ footer {
   .job__variant__var {
     text-align: center;
     padding: 24px 0;
+    padding-bottom: 28px;
     border-bottom: 1px solid #e2e0e6;
   }
   .job__variant__var:nth-child(odd) {
@@ -1188,11 +1189,12 @@ footer {
   .job__variant__var-text {
     font-size: 14px;
     line-height: 18px;
+    margin-bottom: 10px;
   }
   .job__variant__var-textlast {
     font-size: 14px;
     line-height: 18px;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
   }
 }
 
