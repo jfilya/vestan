@@ -272,6 +272,7 @@ footer {
     align-items: center;
     li {
       &:first-child {
+        height: 31px;
         margin-right: 24px;
       }
     }
@@ -352,6 +353,8 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     &__products {
+      align-items: center;
+      display: flex;
       padding: 64px 80px;
       font-size: 20px;
       line-height: 24px;
@@ -453,7 +456,7 @@ footer {
   background: url(../img/bgcontact.jpg);
   background-size: cover;
   background-position: center center;
-  height: calc(100vh - 120px);
+  height: calc(100vh - 111px);
 }
 .headercontact {
   margin-bottom: 190px;
@@ -572,6 +575,11 @@ footer {
 }
 
 @media (max-width: 1280px) {
+  .second{
+    &__right{
+      padding:50px;
+    }
+  }
 
   .company {
     &__info {
@@ -736,6 +744,7 @@ footer {
         padding: 65px 40px;
         font-size: 16px;
         line-height: 20px;
+
       }
     }
   }
