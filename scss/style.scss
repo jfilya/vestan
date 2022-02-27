@@ -61,7 +61,7 @@ h2 {
   font-weight: bold;
   font-size: 48px;
   line-height: 52px;
-  span{
+  span {
     border-bottom: 8px solid #8b00ff;
   }
 }
@@ -72,7 +72,7 @@ button {
   border: none;
 }
 .container,
-.big-container{
+.big-container {
   max-width: 1300px;
   padding: 0 10px;
   margin: 0 auto;
@@ -273,7 +273,7 @@ footer {
     li {
       display: flex;
       align-items: center;
-      a{
+      a {
         display: flex;
         align-items: center;
       }
@@ -453,8 +453,8 @@ footer {
     }
   }
 }
-.greatest{
-  padding:80px;
+.greatest {
+  padding: 80px;
 }
 .greatesting {
   background: #3d2f59;
@@ -553,7 +553,7 @@ footer {
 
 #modal-window {
   position: absolute;
-  bottom: 25%;
+  bottom: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 859px;
@@ -576,16 +576,16 @@ footer {
   justify-content: end;
   padding: 24px 24px;
 }
-.secondwork{
+.secondwork {
   align-items: start;
 }
 @media (max-width: 1440px) {
 }
 
 @media (max-width: 1280px) {
-  .second{
-    &__right{
-      padding:50px;
+  .second {
+    &__right {
+      padding: 50px;
     }
   }
   .company {
@@ -602,12 +602,12 @@ footer {
   .greatest {
     padding-left: 30px;
     padding-right: 30px;
-}
+  }
 }
 @media (max-width: 1068px) {
   .greatest {
     height: 564px;
-}
+  }
 }
 @media (max-width: 1024px) {
   .second {
@@ -758,7 +758,6 @@ footer {
         padding: 65px 40px;
         font-size: 16px;
         line-height: 20px;
-
       }
     }
   }
@@ -776,8 +775,7 @@ footer {
     height: 100%;
     width: 100%;
     padding: 24px 16px;
-}
-
+  }
 }
 @media (max-width: 860px) {
   .footer {
@@ -856,7 +854,7 @@ footer {
         margin-right: 0px;
         line-height: 20px;
         margin-bottom: 16px;
-        &:last-child{
+        &:last-child {
           margin-bottom: 0px;
         }
       }
@@ -1013,7 +1011,7 @@ footer {
       &__var {
         text-align: center;
         padding: 24px 0;
-        padding-bottom: 28px; 
+        padding-bottom: 28px;
         border-bottom: 1px solid #e2e0e6;
         &:nth-child(odd) {
           border-right: none;
@@ -1192,29 +1190,30 @@ footer {
     }
   }
   #modal-window {
-    bottom: -8%;
+    position: fixed;
+    top: 60%;
     height: 100%;
     height: 552px;
     border-radius: 24px 24px 0px 0px;
   }
   .content {
     padding: 16px 16px 0px 16px;
-    &__head{
+    &__head {
       margin-bottom: 22px;
     }
-    &__text{
+    &__text {
       text-align: start;
       font-size: 16px;
       line-height: 20px;
       margin-bottom: 12px;
     }
-    &__textlast{
+    &__textlast {
       text-align: start;
       line-height: 20px;
       margin-bottom: 26px;
     }
   }
-  .modal-btn{
+  .modal-btn {
     padding-bottom: 0px;
     padding-top: 16px;
   }
