@@ -585,7 +585,7 @@ footer {
 }
 
 .greatest {
-  max-width: 50%;
+  width: 50%;
 }
 
 .greatest__title {
@@ -783,7 +783,7 @@ footer {
 
 @media (max-width: 1068px) {
   .greatest {
-    height: 65vh;
+    height: 564px;
   }
 }
 
@@ -945,9 +945,6 @@ footer {
   .map {
     top: 400px;
   }
-  .greatest {
-    width: 100%;
-  }
   .secondwork {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -956,8 +953,8 @@ footer {
   }
   .greatest {
     height: 100%;
-    max-width: 100%;
-    padding: 20px;
+    width: 100%;
+    padding: 24px 16px;
   }
 }
 

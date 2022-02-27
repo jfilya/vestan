@@ -435,7 +435,7 @@ footer {
   }
 }
 .greatest {
-  max-width: 50%;
+  width: 50%;
   &__title {
     margin-bottom: 24px;
   }
@@ -606,7 +606,7 @@ footer {
 }
 @media (max-width: 1068px) {
   .greatest {
-    height: 65vh;
+    height: 564px;
 }
 }
 @media (max-width: 1024px) {
@@ -768,17 +768,16 @@ footer {
   .map {
     top: 400px;
   }
-  .greatest {
-    width: 100%;
-  }
   .secondwork {
     flex-direction: column;
   }
+
   .greatest {
     height: 100%;
-    max-width: 100%;
-    padding: 20px;
+    width: 100%;
+    padding: 24px 16px;
 }
+
 }
 @media (max-width: 860px) {
   .footer {
