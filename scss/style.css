@@ -662,10 +662,6 @@ footer {
     z-index: 3;
   }
 
-  header, .works {
-    height: 100%;
-  }
-
   nav {
     display: none;
     background: rgba(139, 0, 255, 0.9);
@@ -855,6 +851,10 @@ footer {
   .container {
     padding-left: 16px;
     padding-right: 16px;
+  }
+
+  header, .works {
+    height: 100%;
   }
 
   .company__info__extra p {
