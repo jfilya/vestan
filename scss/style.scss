@@ -581,7 +581,7 @@ footer {
 .secondwork {
   align-items: start;
 }
-@media (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
   .second {
     &__right {
       padding: 50px;
@@ -603,12 +603,12 @@ footer {
     padding-right: 30px;
   }
 }
-@media (max-width: 1068px) {
+@media screen and (max-width: 1068px) {
   .greatest {
     height: 564px;
   }
 }
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .second {
     &__right {
       padding: 40px;
@@ -636,9 +636,12 @@ footer {
   }
 }
 
-@media (max-width: 960px) {
+@media screen and (max-width: 960px) {
   .img-logo {
     z-index: 3;
+  }
+  header, .works{
+    height: 100%;
   }
   nav {
     display: none;
@@ -695,6 +698,8 @@ footer {
     }
   }
   .header {
+    padding-top: 16px;
+    margin-bottom: 28px;
     &__navigation {
       flex-direction: column;
       align-items: center;
@@ -703,6 +708,9 @@ footer {
         margin-right: 0px;
       }
     }
+  }
+  .middle {
+    padding-bottom: 24px;
   }
   .activehtml {
     &::before {
@@ -764,7 +772,7 @@ footer {
     flex-direction: column;
   }
   .map {
-    top: 400px;
+    top: 300px;
   }
   .secondwork {
     flex-direction: column;
@@ -776,7 +784,7 @@ footer {
     padding: 24px 16px;
   }
 }
-@media (max-width: 860px) {
+@media screen and (max-width: 860px) {
   .footer {
     flex-direction: column;
     align-self: start;
@@ -804,7 +812,7 @@ footer {
     padding: 30px;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .container {
     padding-left: 16px;
     padding-right: 16px;
@@ -833,7 +841,7 @@ footer {
     }
   }
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   footer {
     padding-bottom: 90px;
     position: relative;
@@ -864,7 +872,7 @@ footer {
     bottom: 40px;
   }
 }
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   h4 {
     font-size: 16px;
     line-height: 20px;
@@ -1061,13 +1069,7 @@ footer {
     height: 552px;
     border-radius: 24px 24px 0px 0px;
   }
-  header {
-    height: 336px;
-  }
-  .header {
-    padding-top: 16px;
-    margin-bottom: 28px;
-  }
+
   .contact {
     height: 484px;
   }
@@ -1119,15 +1121,15 @@ footer {
   .map {
     left: 50%;
     transform: translate(-50%, 0%);
-    top:288px;
+    top: 288px;
     width: 248px;
     img {
       width: 248px;
     }
   }
-  .works {
-    height: 520px;
-  }
+  // .works {
+  //   height: 520px;
+  // }
   .work {
     &__we {
       font-size: 14px;
@@ -1184,3 +1186,6 @@ footer {
     padding-top: 16px;
   }
 }
+// @media screen and (max-width: 576px){
+
+// }
