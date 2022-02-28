@@ -893,45 +893,57 @@ footer {
 @media (max-width: 576px) {
   h4 {
     font-size: 16px;
+    line-height: 20px;
   }
 
-  .second__right__vest span {
-    border-bottom: 4px solid #8b00ff;
+  .second__left__imagelast {
+    height: 251px;
   }
   .second__left p {
     font-size: 14px;
   }
-
-  .information {
-    padding: 24px 0;
+  .second__right__vest {
+    margin-bottom: 16px;
+  }
+  .second__right__vest span {
+    border-bottom: 4px solid #8b00ff;
+  }
+  .second__right__our {
+    line-height: 18px;
+  }
+  .second__right__largest {
+    line-height: 18px;
+  }
+  .second__right__we {
+    line-height: 18px;
   }
 
+  .information {
+    padding: 0px;
+    padding-top: 24px;
+  }
+
+  .company__numbers {
+    margin-bottom: 0px;
+    line-height: 24px;
+  }
   .company__info {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .market {
-    padding-top: 24px;
-    padding-bottom: 0px;
-  }
-  .market__vest {
-    font-size: 20px;
-    line-height: 24px;
-    margin-bottom: 0px;
-  }
-  .market__prod {
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-  }
-  .market__prod__products {
-    text-align: center;
-    display: flex;
-    align-items: flex-start;
-    padding: 24px 8px;
-  }
-
   .company__info__extra {
+    padding: 23px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: none;
+  }
+  .company__info__extra p {
+    text-align: center;
+  }
+  .company__info__extra span {
+    display: flex;
+    text-align: center;
+    line-height: 20px;
   }
   .company__info__extra:first-child {
     border: none;
@@ -966,9 +978,25 @@ footer {
     top: 10%;
   }
 
+  .market {
+    padding-top: 24px;
+    padding-bottom: 0px;
+  }
+  .market__vest {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 0px;
+  }
+  .market__prod {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
   .market__prod__products {
+    text-align: center;
     display: flex;
+    align-items: flex-start;
     justify-content: center;
+    padding: 24px 8px;
   }
   .market__prod__products:first-child {
     border-right: none;
@@ -1061,8 +1089,7 @@ footer {
     height: 552px;
     border-radius: 24px 24px 0px 0px;
   }
-}
-@media screen and (max-width: 420px) {
+
   header {
     height: 336px;
   }
@@ -1084,50 +1111,6 @@ footer {
   }
   .middle__mission {
     font-size: 16px;
-    line-height: 20px;
-  }
-
-  h4 {
-    line-height: 20px;
-  }
-
-  .second__left__imagelast {
-    height: 251px;
-  }
-  .second__right__vest {
-    margin-bottom: 16px;
-  }
-  .second__right__our {
-    line-height: 18px;
-  }
-  .second__right__largest {
-    line-height: 18px;
-  }
-  .second__right__we {
-    line-height: 18px;
-  }
-
-  .information {
-    padding: 0px;
-    padding-top: 24px;
-  }
-
-  .company__numbers {
-    margin-bottom: 0px;
-    line-height: 24px;
-  }
-  .company__info__extra {
-    padding: 23px 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .company__info__extra p {
-    text-align: center;
-  }
-  .company__info__extra span {
-    display: flex;
-    text-align: center;
     line-height: 20px;
   }
 
@@ -1167,12 +1150,13 @@ footer {
   }
 
   .map {
-    top: 287px;
-    right: 24px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    top: 288px;
+    width: 248px;
   }
   .map img {
     width: 248px;
-    height: 152px;
   }
 
   .works {

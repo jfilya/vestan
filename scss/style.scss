@@ -535,13 +535,11 @@ footer {
 #wrapper-modal {
   width: 100%;
   height: 100%;
-  visibility:hidden;
-
+  visibility: hidden;
 }
 
 #wrapper-modal.active {
   visibility: visible;
-
 }
 
 #overlay {
@@ -869,51 +867,59 @@ footer {
 @media (max-width: 576px) {
   h4 {
     font-size: 16px;
+    line-height: 20px;
   }
   .second {
-    &__right {
-      &__vest {
-        span {
-          border-bottom: 4px solid #8b00ff;
-        }
-      }
-    }
     &__left {
+      &__imagelast {
+        height: 251px;
+      }
       p {
         font-size: 14px;
       }
     }
-  }
-  .information {
-    padding: 24px 0;
-  }
-  .company {
-    &__info {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  .market {
-    padding-top: 24px;
-    padding-bottom: 0px;
-    &__vest {
-      font-size: 20px;
-      line-height: 24px;
-      margin-bottom: 0px;
-    }
-    &__prod {
-      grid-template-columns: repeat(2, 1fr);
-      justify-items: center;
-      &__products {
-        text-align: center;
-        display: flex;
-        align-items: flex-start;
-        padding: 24px 8px;
+    &__right {
+      &__vest {
+        margin-bottom: 16px;
+        span {
+          border-bottom: 4px solid #8b00ff;
+        }
+      }
+      &__our {
+        line-height: 18px;
+      }
+      &__largest {
+        line-height: 18px;
+      }
+      &__we {
+        line-height: 18px;
       }
     }
   }
+  .information {
+    padding: 0px;
+    padding-top: 24px;
+  }
   .company {
+    &__numbers {
+      margin-bottom: 0px;
+      line-height: 24px;
+    }
     &__info {
+      grid-template-columns: repeat(2, 1fr);
       &__extra {
+        padding: 23px 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+          text-align: center;
+        }
+        span {
+          display: flex;
+          text-align: center;
+          line-height: 20px;
+        }
         border: none;
         &:first-child {
           border: none;
@@ -951,10 +957,22 @@ footer {
     }
   }
   .market {
+    padding-top: 24px;
+    padding-bottom: 0px;
+    &__vest {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 0px;
+    }
     &__prod {
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
       &__products {
+        text-align: center;
         display: flex;
+        align-items: flex-start;
         justify-content: center;
+        padding: 24px 8px;
         &:first-child {
           border-right: none;
         }
@@ -1038,13 +1056,11 @@ footer {
     }
   }
   #modal-window {
-    bottom:0%;
+    bottom: 0%;
     transform: translate(-50%, 0%);
     height: 552px;
     border-radius: 24px 24px 0px 0px;
   }
-}
-@media screen and (max-width: 420px) {
   header {
     height: 336px;
   }
@@ -1063,56 +1079,6 @@ footer {
     &__mission {
       font-size: 16px;
       line-height: 20px;
-    }
-  }
-  h4 {
-    line-height: 20px;
-  }
-  .second {
-    &__left {
-      &__imagelast {
-        height: 251px;
-      }
-    }
-    &__right {
-      &__vest {
-        margin-bottom: 16px;
-      }
-      &__our {
-        line-height: 18px;
-      }
-      &__largest {
-        line-height: 18px;
-      }
-      &__we {
-        line-height: 18px;
-      }
-    }
-  }
-  .information {
-    padding: 0px;
-    padding-top: 24px;
-  }
-  .company {
-    &__numbers {
-      margin-bottom: 0px;
-      line-height: 24px;
-    }
-    &__info {
-      &__extra {
-        padding: 23px 16px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        p {
-          text-align: center;
-        }
-        span {
-          display: flex;
-          text-align: center;
-          line-height: 20px;
-        }
-      }
     }
   }
   .camera {
@@ -1151,11 +1117,12 @@ footer {
     }
   }
   .map {
-    top: 287px;
-    right: 24px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    top:288px;
+    width: 248px;
     img {
       width: 248px;
-      height: 152px;
     }
   }
   .works {
@@ -1195,7 +1162,6 @@ footer {
       }
     }
   }
-
   .content {
     padding: 16px 16px 0px 16px;
     &__head {
